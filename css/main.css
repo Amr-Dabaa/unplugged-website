@@ -86,12 +86,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   .content-wrapper {
-    outline: 3px dotted red;
-    width: 90%;
-    margin: 50px 0;
-  }
-   /* ---------------  Base Header - Footer Styles ----------------------------- */
+.content-wrapper {
+  outline: 3px dotted red;
+  width: 90%;
+  margin: 50px 0;
+}
+
+/* ---------------  Base Header - Footer Styles ----------------------------- */
 
 header {
   display: flex;
@@ -134,7 +135,7 @@ footer {
   text-align: center;
 }
 
-footer .content-wrapper{
+footer .content-wrapper {
   width: 55%;
 }
 
@@ -353,6 +354,7 @@ features h3 {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
+
   /* Media queries for tablets */
   .content-wrapper {
     width: 640px;
@@ -397,7 +399,7 @@ features h3 {
   }
 
 
-/* ---------------   Homepage -------------*/
+  /* ---------------   Homepage -------------*/
 
   aside .content-wrapper {
     display: flex;
@@ -406,16 +408,17 @@ features h3 {
     margin: 50px 0;
   }
 
-  aside .form-description, aside .form {
+  aside .form-description,
+  aside .form {
     width: 40%;
     margin: 0;
   }
 
-/*   .features .features-items {
+  /*   .features .features-items {
     justify-content: space-around;
   } */
 
-  .features  article {
+  .features article {
     display: flex;
     align-items: center;
     flex-flow: column wrap;
@@ -437,67 +440,120 @@ features h3 {
     width: 49%;
   }
 
-/*   .reviews .content-wrapper article div,
+  /*   .reviews .content-wrapper article div,
   .reviews .content-wrapper article img {
     width: 50%;
   }
  */
 
 
- /*---------------- About page -----------------*/
+  /*---------------- About page -----------------*/
 
- .mission-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-}
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 
-.mission-content h2 {
-  margin-bottom: 20px;
-}
+  .mission-content h2 {
+    margin-bottom: 20px;
+  }
 
-.mission-content p {
-  width: 45%;
-}
+  .mission-content p {
+    width: 45%;
+  }
 
-.contact-section .content-wrapper h2 {
-  width: 80%
-}
+  .contact-section .content-wrapper h2 {
+    width: 80%
+  }
 
-.contact-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
- /*---------------- FAQ page ------------------*/
+  /*---------------- FAQ page ------------------*/
 
- .faq .content-wrapper {
-  justify-content: space-between;
-}
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
 
-.faq-content {
-  flex-basis: 45%;
-}
+  .faq-content {
+    flex-basis: 45%;
+  }
 
-.faq h2 {
-  width: 100%;
-}
-
-
+  .faq h2 {
+    width: 100%;
+  }
 
 
 }
 
 @media only screen and (min-width: 1200px) {
   /* Media query for desktop */
+  .content-wrapper {
+    width: 960px;
+  }
+
+  header {
+    padding: 15px 0;
+  }
+
+  footer .content-wrapper {
+    width: 960px;
+  }
+
+
+  /* ------------ Homepage --------------------*/
+.hero-area h1 {
+  width: 80%;
+}
+
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper div {
+    width: 30%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+  
+  .features h2 {
+    width: 90%;
+  }
+
+  .reviews article div {
+    width: 42%;
+  }
+
+  .reviews h2 {
+    margin-bottom: 50px;
+  }
+
+  /*--------------About page ----------------*/
+
+  .mission h2 {
+    width: 90%;
+  }
+
+
+  /*-------------- FAQ page -------------------*/
+
+  .faq h2 {
+    width: 100%;
+  }
+
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -508,6 +564,7 @@ features h3 {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -575,4 +632,3 @@ features h3 {
     page-break-after: avoid;
   }
 }
-
