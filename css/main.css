@@ -86,6 +86,65 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/* General Styles */
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+  line-height: 43px;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
+  ;
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;
+}
+
+p {
+  font-size: 0.875em;
+  line-height: 18px;
+}
+
+address {
+  font-style: normal;
+}
+
+input {
+  font-size: 1.125em;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+
 .content-wrapper {
   outline: 3px dotted red;
   width: 90%;
@@ -119,6 +178,8 @@ header .content-wrapper {
 
 header nav {
   width: 60%;
+  font-size: 1.125em;
+  font-weight: bold;
 }
 
 header nav ul {
@@ -164,6 +225,8 @@ footer .social-icons p {
 .copyright {
   margin: 20px 0;
 }
+
+/* -------------------- Mobile Homepage ----------------------*/
 
 .hero-area {
   display: flex;
@@ -214,6 +277,7 @@ features h3 {
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 30px;
 }
 
 .reviews h3 {
@@ -261,6 +325,11 @@ features h3 {
 
 .faq-content {
   margin-bottom: 50px;
+  line-height: 30px;
+}
+
+.faq-content h4 {
+  line-height: 24px;
 }
 
 
@@ -355,6 +424,27 @@ features h3 {
 
 @media only screen and (min-width: 768px) {
 
+  h1 {
+    font-size: 3em;
+    line-height: 48px;
+  }
+
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.25em;
+    line-height: 48px;
+  }
+
+  h3 {
+    font-family: 'Poppins', sans-serif;
+    line-height: 30px;
+  }
+
+  p {
+    font-size: 0.875em;
+    line-height: 18px;
+  }
+
   /* Media queries for tablets */
   .content-wrapper {
     width: 640px;
@@ -392,6 +482,18 @@ features h3 {
   footer .footer-content .contact {
     margin-bottom: 0;
 
+  }
+
+  footer .contact h4 {
+    font-size: 1.5em;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+  }
+
+  footer p {
+    line-height: 18px;
   }
 
   .copyright {
@@ -488,10 +590,35 @@ features h3 {
     width: 100%;
   }
 
+  .faq h4,
+  .faq p {
+    font-size: 0.875em;
+    line-height: 15.75px;
+  }
+
 
 }
 
 @media only screen and (min-width: 1200px) {
+
+  h1 {
+    font-size: 3.75em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3, h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 24px;
+  }
+
+
   /* Media query for desktop */
   .content-wrapper {
     width: 960px;
@@ -507,9 +634,9 @@ features h3 {
 
 
   /* ------------ Homepage --------------------*/
-.hero-area h1 {
-  width: 80%;
-}
+  .hero-area h1 {
+    width: 80%;
+  }
 
   aside .content-wrapper {
     justify-content: space-around;
@@ -522,7 +649,7 @@ features h3 {
   .features article {
     flex-basis: 33%;
   }
-  
+
   .features h2 {
     width: 90%;
   }
@@ -538,6 +665,7 @@ features h3 {
   /*--------------About page ----------------*/
 
   .mission h2 {
+    font-size: 3em;
     width: 90%;
   }
 
@@ -545,7 +673,13 @@ features h3 {
   /*-------------- FAQ page -------------------*/
 
   .faq h2 {
+    font-size: 3em;
     width: 100%;
+  }
+
+  .faq h4, .faq p {
+    font-size: 1.125em;
+    line-height: 18px ;
   }
 
 }
