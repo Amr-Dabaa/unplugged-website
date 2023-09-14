@@ -229,19 +229,31 @@ footer .contact {
 
 footer .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  width: 12.5em;
 }
 
 footer p {
   margin: 0;
 }
 
+
+
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
+footer .social-icons p i {
+
+  font-size: 1.3em;
+  margin: 0 20px;
 }
 
 .copyright {
@@ -296,6 +308,7 @@ input[type=button] {
   background-size: cover;
 }
 
+
 .features h2 {
   margin-bottom: 60px;
 }
@@ -303,10 +316,16 @@ input[type=button] {
 .features article {
   width: 63%;
   margin: 30px 0;
+  text-align: center;
 }
 
 .features p {
   margin: 0;
+}
+
+.features .fontawesome-icon {
+  font-size: 3.75em;
+  padding-bottom: 2.5rem;
 }
 
 
