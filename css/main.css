@@ -170,6 +170,15 @@ header .content-wrapper {
   margin: 0;
 }
 
+header figure {
+  margin: 0;
+  width: 30%;
+}
+
+header figure img {
+  width: 100%;
+}
+
 
 .header-divider {
   width: 100%;
@@ -191,6 +200,10 @@ header nav ul {
   justify-content: space-around;
   padding: 0;
   width: 100%;
+}
+
+header nav ul li {
+  font-size: 1.125em;
 }
 
 footer {
@@ -236,6 +249,8 @@ footer .social-icons p {
 .hero-area {
   display: flex;
   justify-content: center;
+  background: url('../img/unplugged-retreat.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 aside {
@@ -248,14 +263,14 @@ aside {
 aside .form {
   margin-top: 30px;
 }
- 
+
 input[type=text] {
   box-sizing: border-box;
   width: 100%;
   font-style: italic;
   padding: 1em;
 }
- 
+
 input[type=button] {
   width: 100%;
   padding: 20px 0;
@@ -273,6 +288,8 @@ input[type=button] {
 .features {
   display: flex;
   justify-content: center;
+  background: url('../img/unplugged-retreat-features.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .features h2 {
@@ -304,7 +321,17 @@ features h3 {
 .reviews {
   display: flex;
   justify-content: center;
-  background-color: #2a423a ;
+  background-color: #2a423a;
+}
+
+
+.reviews article figure, .reviews article div {
+  margin: 0;
+  flex-basis: 49%;
+}
+
+.reviews img {
+  width: 100%;
 }
 
 .reviews h2 {
@@ -473,6 +500,7 @@ features h3 {
   h3 {
     font-family: 'Poppins', sans-serif;
     line-height: 30px;
+    font-size: 1.5em;
   }
 
   p {
@@ -496,6 +524,10 @@ features h3 {
 
   }
 
+  header figure {
+    margin: 0;
+  }
+
   .header-divider {
     display: none;
   }
@@ -503,6 +535,11 @@ features h3 {
   header nav {
     width: 25%;
   }
+
+  header nav ul {
+    margin: 0;
+  }
+
 
   footer .content-wrapper {
     width: 65%;
@@ -538,6 +575,10 @@ features h3 {
 
   /* ---------------   Homepage -------------*/
 
+  .hero-area {
+    min-height: 600px;
+  }
+
   aside .content-wrapper {
     display: flex;
     justify-content: space-between;
@@ -551,6 +592,8 @@ features h3 {
     margin: 0;
   }
 
+ 
+
   /*   .features .features-items {
     justify-content: space-around;
   } */
@@ -563,18 +606,37 @@ features h3 {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
   }
+
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
+  .features p {
+    text-align: center;
+  }
+
+  .reviews h2 {
+    width: 85%;
+  }
+
 
   .reviews article {
     display: flex;
-    /* justify-content: space-between; */
-    justify-content: center;
+    justify-content: space-between;
     flex-flow: row nowrap;
   }
 
   .reviews article div {
     width: 49%;
+  }
+
+  .reviews h3 {
+    margin: 0;
+    width: 75%;
+    font-size: 1.5em;
+    line-height: 30px ;
   }
 
   /*   .reviews .content-wrapper article div,
@@ -644,7 +706,8 @@ features h3 {
     font-size: 2.25em;
   }
 
-  h3, h4 {
+  h3,
+  h4 {
     font-size: 1.875em;
   }
 
@@ -672,7 +735,11 @@ features h3 {
   }
 
   footer h4 {
-   font-size: 1.875em;
+    font-size: 1.875em;
+  }
+
+  .content-wrapper{
+    width: 960px;
   }
 
 
@@ -720,9 +787,10 @@ features h3 {
     width: 100%;
   }
 
-  .faq h4, .faq p {
+  .faq h4,
+  .faq p {
     font-size: 1.125em;
-    line-height: 18px ;
+    line-height: 18px;
   }
 
 }
