@@ -226,6 +226,12 @@ footer .contact {
   margin-bottom: 50px;
 }
 
+footer .social {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
 
 footer .social-icons {
   display: flex;
@@ -606,6 +612,8 @@ features h3 {
   footer p {
     line-height: 18px;
   }
+
+
 
   .copyright {
     width: 100%;
