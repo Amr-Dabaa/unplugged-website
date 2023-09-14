@@ -618,6 +618,11 @@ features h3 {
     min-height: 600px;
   }
 
+  .hero-area h1 {
+    line-height: 1;
+    margin: 0;
+  }
+
   aside .content-wrapper {
     display: flex;
     justify-content: space-between;
