@@ -683,6 +683,13 @@ features h3 {
     width: 45%;
   }
 
+  .map figure {
+
+    padding-bottom: 45%; 
+
+}
+ 
+
   .contact-section .content-wrapper h2 {
     width: 80%
   }
@@ -798,6 +805,12 @@ features h3 {
     font-size: 3em;
     width: 90%;
   }
+
+  .map figure {
+
+    padding-bottom: 37.5%; 
+
+}
 
 
   /*-------------- FAQ page -------------------*/
